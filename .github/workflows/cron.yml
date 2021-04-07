@@ -15,7 +15,10 @@ jobs:
 
       - name: Update Readme
         run: |
-          echo "# gha-cron-demo\nSimple Example of Updating Repo with Github Actions Cron Scheduling\n\nLast Updated:" > README.md
+          echo "# GHA Cron Demo" > README.md
+          echo "Simple Example of Updating Repo with Github Actions Cron Scheduling" >> README.md
+          echo "" >> README.md
+          echo "Last Updated:" >> README.md
           date >> README.md
           
       - name: Push Changes
