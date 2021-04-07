@@ -21,12 +21,6 @@ jobs:
           date >> README.md
           echo "" >> README.md
           echo "It's worth noting that [cron is not guaranteed to run the scheduled time](https://upptime.js.org/blog/2021/01/22/github-actions-schedule-not-working/)" >> README.md
-          echo "" >> README.md
-          echo "To do this, I created `.github/workflows/cron.yml`" >> README.md
-          echo "" >> README.md
-          echo "```yml" >> README.md
-          cat .github/workflows/cron.yml >> README.md
-          echo "```" >> README.md
           
       - name: Push Changes
         run: |
