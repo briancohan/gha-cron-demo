@@ -24,7 +24,9 @@ jobs:
           echo "" >> README.md
           echo "To do this, I created `.github/workflows/cron.yml`" >> README.md
           echo "" >> README.md
+          echo "```yml" >> README.md
           cat .github/workflows/cron.yml >> README.md
+          echo "```" >> README.md
           
       - name: Push Changes
         run: |
